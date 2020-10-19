@@ -1,0 +1,107 @@
+body {
+  background: #ccccff;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+
+
+.head {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 10px solid black;
+  background: white;
+  position: relative;
+  justify-content: center;
+  display: flex;
+  align-items: baseline;
+}
+
+.head::before {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  box-shadow: inset -22px 5px 0 7px rgba(0, 0, 0, 0.192);
+}
+.head::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 30px;
+  background: white;
+  margin-top: 300px;
+  border: 10px solid black;
+  border-bottom: none;
+}
+
+.left,
+.right {
+  background: black;
+  border-radius: 50%;
+  width: 175px;
+  height: 175px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left {
+  margin-left: -180px;
+}
+.right {
+  margin-left: 180px;
+}
+.mouth {
+  width: 180px;
+  height: 80px;
+  background: black;
+  margin-top: 190px;
+  border: 10px solid black;
+  position: absolute;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+
+.manbody {
+  background: #0a001a;
+  height: 200px;
+  width: 180px;
+  margin-top: 330px;
+  border: 10px solid black;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  position: absolute;
+}
+
+.neck {
+    width: 90px;
+    height: 60px;
+    background: white;
+    margin-top: 340px;
+    z-index: 1;
+    border-bottom-left-radius: 120px;
+    border-bottom-right-radius: 120px;
+    position: absolute;
+}
+
+.shirtbutton1 {
+    height: 140px;
+    width: 10px;
+    background: black;
+    margin-top: 400px;
+    z-index: 1;
+    position: absolute;
+}
+
